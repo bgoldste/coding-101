@@ -77,3 +77,26 @@ for a in range(6):
 	print 'a = ', a
 	text_2 = "Hi %s, you have %d dollars in credits!" % (names[a], credits[a])
 	print text_2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#for next time/future
+#other languages and what they are
+#lists + for loops
+#if/else
+
