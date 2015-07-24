@@ -1,2 +1,159 @@
-a
+Alex Notes 6/24/2015
+
+Resources:
+
+ben's coding 101 github - https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fbgoldste%2Fcoding-101&sa=D&sntz=1&usg=AFQjCNFQIL9VqaQdQ8JGT-BUQYKeZxGl_A
+Learn Python the Hard Way Guide http://www.google.com/url?q=http%3A%2F%2Flearnpythonthehardway.org%2F&sa=D&sntz=1&usg=AFQjCNEWQmXNQuCpsDQlkHUZCwA1rLXIVw
+sublime text mac shortcuts - http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/keyboard_shortcuts_osx.html
+
+https://www.codecademy.com
+Code Combat (learn to code via playing a game?) https://codecombat.com/
+
+Vocab:
+
+string = series of numbers and letters | a-z, A-Z, alphanumeric (one)
+int = integer (1)
+float = decimal (1.0)
+type = 
+print = display
+function =
+value =
+concatenate = 
+# = comment
+"" or '' =
+() = 
+DRY = Don’t Repeat yourself
+% = placeholder token
+%s = placeholder (s stands for string)
+%d = placeholder (d standing for decimal)
+lists / arrays = a list of values (lists should have plural, such as "names" vs "name")
+raise =
+for loop = for [unit being used] in [array / number] (for "x" in "y"). Can have a for loop within for loop - nests the loop within another loop.
+node = 
+
+
+Class Notes 7/24/15
+
+Python - language using today
+DRY - do not repeat (don't repeat yourself, if someone else figured it out, use their solution)
+code academy python tutorial
+
+
+Types (expression / values)
+
+- "one" ["string" = a series of numbers and letters | a-z, A-Z, alphanumeric organization] 
+- 1 ["int" = Integers | 1,-1,2,3,4,-2, etc ]
+- 1.0 ["Float" = Decimal]
+
+save any program as .py - can be run as a python program
+
+# in front means comment
+
+print = display
+
+strings are generally in quotes (can be double or single quotes as long as consistent)
+
+command B - run program in simple text
+
+example:
+
+#print hello world
+print "hello, World"
+
+variable: store info in variable
+b = what you want to store
+—> will store a value for b
+
+#types
+b="hello"
+
+print b
+
+print b + " nate"
+ will return "hello nate"
+
+types of value (string, int, float = types)
+
+print type(b)
+—> will print out the "type" that b is, i.e. will return:
+<type 'string'>
+
+c=5
+
+print type(c) 
+will return: 
+<type 'int'>
+
+add two types together:
+
+d = b (hello) + c (5)
+print d
+will return an ERROR
+
+b/c telling computer to add "hello" + 5
+
+concatenate = adding two types
+
+generally types need to be the same type to play well together / not return error
+
+String conversion
+d= b+ str(c)
+—> will convert c into string which changes it to "5"
+—> will return hello5
+
+function: in parenthesis, so str(c) is running a function
+
+
+e="5"
+f=e+c
+—> will return an error because "" classifies e as a string 
+
+f=int(e) + c
+—> will return 10
+
+just doing a type conversion does not mean the actual original value will change. 
+
+to change the value, reassign it
+
+benefit to converting one type over the other
+
+#string formatting
+name = Alex
+credits =100000000
+text="hi %s you have 10 dollars in credits!"
+print
+
+%s = placeholder (s stands for string)
+%d = placeholder (d standing for decimal)
+%f =
+so:
+
+text="hi %s you have 10 dollars in credits!" % name
+
+quotes: if name has ' in it, or there are many versions of quotes, you can triple quotes 
+
+name = "alex"
+credits =100000000
+text="hi %s you have %d dollars in credits!" % (name, credits)
+print text
+
+will return:
+hi alex you have 100000000 dollars in credits!
+
+names = ["emmett","D’nae","Alex","Braden"]
+
+print len(names) 
+will return: 
+4
+
+print names [3]
+will return: 
+Alex
+
+
+for name in names:
+	credits = 50000
+	text_2 = "hi %s you have %d dollars in credits!" % (name, credits)
+	print text_2
+
 
